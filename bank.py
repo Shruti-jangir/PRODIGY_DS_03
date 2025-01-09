@@ -1,4 +1,3 @@
-# Import necessary libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -6,11 +5,9 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 
-# Load the dataset
 url = r"C:\Users\shrut\Downloads\bank+marketing\bank\bank.csv"
 data = pd.read_csv(url, sep=';')
 
-# Inspect the data
 print(data.head())
 print(data.info())
 
